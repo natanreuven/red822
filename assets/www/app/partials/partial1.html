@@ -1,0 +1,47 @@
+<div>
+<button ng-click="NewGame()"> 
+  new game 
+</button>
+<table>
+	<tr ng-repeat="row in board1">
+		
+		<td ng-repeat="cell in board1">	
+			<p>
+			  <div ng-click="NumberIsClicked(board1[$parent.$index][$index])" > 
+			    <img id="click_{{board1[$parent.$index][$index] }}" src="img/numbers/number{{board1[$parent.$index][$index] }}.jpg" class="{{class_string}}" > 
+			  
+			  <audio id="okAudio" preload="none">
+ 				<!-- <source type="audio/mpeg" src="sounds/ok_button.mp3"/> --> 
+ 				
+ 				<!-- <source type="audio/mpeg" src="sounds/{{button_sound}}"/>  -->
+			  </audio>
+			  
+			  
+			  
+			  </div>
+			</p>	
+			<p>	  
+			<!-- 	{{board1[$parent.$index][$index] }}  -->
+			
+			  </p>
+ 		</td>
+	</tr>
+<audio id="okAudio" preload="none">
+ <source type="audio/mpeg" src="/android_assets/www/sounds/app/ok_button.mp3"/> 
+</audio>
+<audio id="wrongAudio" preload="none">
+ <source type="audio/mpeg" src="/assets/www/app/sounds/wrong_button.mp3"/> 
+</audio>
+<audio id="finish" preload="none">
+ <source type="audio/mpeg" src="sounds/finish.mp3"/> 
+</audio>
+
+	
+	
+	
+	
+</table>
+</div>
+
+
+
